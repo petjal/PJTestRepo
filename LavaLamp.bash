@@ -7,7 +7,7 @@
 
 clear ; 
 while true ; 
-do ssh-keygen -f /tmp/junk_$(date +%S) -N '' -t ecdsa -b 521 | grep -v -e '^G' -e '^Y' -e '^T' -e '^S' ; 
+do ssh-keygen -f /tmp/junk_$RANDOM -N '' -t ecdsa -b 521 | grep -v -e '^G' -e '^Y' -e '^T' -e '^S' ; 
 sleep 3 ; 
 clear ; 
 done
